@@ -5,20 +5,26 @@
         <!--this tag makes it compatible with all devices-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--this is the title of the website-->
+
         <title>White Muse</title>
+
         <!--this link conects to the css file-->
         <link rel="stylesheet" href="styles.css">
         <!--theses are a google fonts link-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        <!--adds somethig to smaller devices like a menu-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     </head>
 
     <body>
         <section class="header">
             <nav>
                 <a href="index.html"><img class="logo" src="images/muse.png"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
@@ -27,7 +33,29 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
+
+        <div class="text-box">
+            <h1>THE WHITE MUSE</h1>
+            <p>Our mission is to bring you high-quality, clean burning, soy blend candles and wax melts.<br>Every candle and melt is poured by hand to ensure the highest quality everytime.<br>All of our scents are blended from Certified Clean Fragrance oils and guaranteed to be phthalate-free and non-toxic.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+
         </section>
+
+        <!--some java script: to open
+            and close the menu button on smaller devices-->
+        <!--toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            </script>
     </body>
 </html>
