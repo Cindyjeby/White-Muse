@@ -10,7 +10,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(39, 37, 37, 0.5),rgba(39,37,37,0.5)), url(images/Two-Toned\ Black\ Glass\ Candles\ -\ Cedarwood\ Moss.jpg);
+    background-image: linear-gradient(rgba(39, 37, 37, 0.5),rgba(39,37,37,0.5)), url(images/muse.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -38,7 +38,7 @@ nav{
 }
 .nav-links ul li::after {
     content: '';
-    background: darkblue;
+    background: blue;
     width: 0%;
     height: 2px;
     display: block;
@@ -78,8 +78,8 @@ nav{
     cursor: pointer;
 }
 .hero-btn:hover {
-    border: 1px solid darkblue;
-    background: darkblue;
+    border: 1px solid blue;
+    background: blue;
     transition: 1s;
 }
 nav .fa {

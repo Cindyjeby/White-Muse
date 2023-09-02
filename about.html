@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--this tag makes it compatible with all devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--this is the title of the website-->
+
+        <title>White Muse</title>
+
+        <!--this link conects to the css file-->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="about.css">
+
+        <!--theses are a google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        <!--adds somethig to smaller devices like a menu-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+        <!--connects to the icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img class="logo" src="images/muse.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>ABOUT US</h1>
+    </section>
+
+    <!--about us content-->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>OUR STORY</h1>
+                <p>White muse is a name that inspired us to begin this journey, like any other story our started one evening in a facetime call as we were ctaching up during the covid lockdown. As the times got rough for everyone our co-founder "@#$#" had sent each of us a gift set she put together of different fragrances she wanted us to try out. She said and i quote "During this time we tend to get nervers and scared may this scents bring you ease as you go throught your day with your family"</p>
+                <h2>THE AHH MOMENT</h2>
+                <p>At that moment during that call ass girls do emotions where all over. and it dawned on us. As the days progress andthe times get rought. We all needsome type of comfort and that was the conseption of the idea</p>
+                <p>The journey was hard to get the fragrances and the oils and to get the right formulars for every mood with the co intrest to be relaxing and also bringing families and friends together with the gift sets. The support was immense from the people colse to us and we gotto see the joy it brought to each of as and it was all worth it</p>
+            </div>
+            <div class="about-col">
+                <img src="images/sculptural candles by noosh_studio.jpg" width="300" height="400">
+            </div>
+        </div>
+        <div class="explore">
+            <p>Now as we bring this products to you and get all your feed back we feel really luck to be in your homes, friendships and part of your ways to express love.</p>
+                <a href="" class="explore-btn">EXPLORE NOW</a>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="cta">
+        <h1>How To Find Us:</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+        <div class="icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+    </section>
+
+     <!--some java script: to open
+            and close the menu button on smaller devices-->
+        <!--toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            </script>
+    </body>
+</html>
